@@ -1,6 +1,10 @@
 local library = {}
 
-local animationData = require(game.ReplicatedStorage.Data.animationData)
+local animationData = {
+	testAnim1 = "1234",
+	testAnim2 = "1234",
+	testAnim3 = "1234"
+}
 
 function library.playAnimation(humanoid, animationName)
 	assert(animationData[animationName], 'invalid animation name')
